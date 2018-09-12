@@ -1,0 +1,198 @@
+@font-face {
+    font-family: OpenSansHebrew;
+    src: url("fonts/OpenSansHebrew-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    font-size: inherit;
+    font-weight: normal;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#container {
+    font-family: "OpenSansHebrew", sans-serif;
+    color: #434343;
+    background: #fafafa;
+    position: relative;
+}
+
+#header {
+    height: 210px;
+    padding-top: 45px;
+    background-color: #13829f;
+    background-image: radial-gradient(circle at 37% -60px, #1bdff5 0%, #1ab4c5 10%, #13829f 36%, #13829f 100%);
+    position: relative;
+}
+
+
+.logo {
+    margin: auto auto;
+    width: 80px;
+    height: 73px;
+}
+
+/* FORM STYLES*/
+#form {
+    position: absolute;
+    max-width: 380px;
+    background: #ffffff;
+    margin: -48px auto 0 auto;
+    right:0;
+    left:0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 0 60px;
+}
+#form .formContent {
+    padding: 0 34px 34px 34px;
+}
+#form .formContent::after {
+    display: block;
+    clear: both;
+}
+
+#form .formTitle {
+    font-size: 22px;
+    padding: 34px 0;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 34px;
+}
+
+/* INPUT CONTAINER */
+#form .formInputContainer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#form .formInputContainer:nth-of-type(2) {
+    float: left;
+    width:45%;
+
+}
+#form .formInputContainer:nth-of-type(1) {
+    float: right;
+    width:45%;
+    margin-left: 10%;
+}
+
+#form .formInputContainer label {
+    font-size:13px;
+    display: block;
+    margin-bottom: 9px;
+}
+
+#form .formInputContainer input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    height: 40px;
+    padding: 12px;
+    font-size: 15px;
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+}
+
+#form .formInputContainer input::placeholder {
+    opacity: .3;
+}
+
+#form .formInputContainer input:focus {
+    border: 1px solid #fab442;
+}
+
+#form #submit {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fab442;
+    color: #000000;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* LICENSE AGREEMENT*/
+#licenseAgreement {
+    direction: rtl;
+    justify-content: center ;
+    text-align: center;
+}
+
+#licenseAgreement input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-color: #fab442;
+    border: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    vertical-align: text-bottom;
+    display: inline-block;
+    position: relative;
+    outline: none;
+}
+
+#licenseAgreement input[type="checkbox"]:checked {
+    background-color: #fab442;
+    color: #99a1a7;
+}
+
+#licenseAgreement input[type="checkbox"]:checked:after {
+    content: '\2714';
+    position: absolute;
+    font-size: 9px;
+    left: 3px;
+    margin: 0;
+    color: #ffffff;
+}
+
+#licenseAgreement span {
+    font-size: 13px;
+}
+#licenseAgreement span a{
+    color: #000;
+}
+
+@media only screen and (max-width: 400px) {
+
+    #form .formInputContainer:nth-of-type(1) {
+        float: none;
+        width: inherit;
+        margin-left: inherit;
+    }
+
+    #form .formInputContainer:nth-of-type(2) {
+        float: none;
+        width: inherit;
+        margin-left: inherit;
+    }
+
+    #form {
+        position: absolute;
+        max-width: inherit;
+        background: #ffffff;
+        margin: -48px 20px 20px 20px;
+    }
+
+    #form .formTitle {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    #header {
+        background-image: radial-gradient(circle at left top, #1bdff5 0%, #1ab4c5 40%, #13829f 100%);
+    }
+}
