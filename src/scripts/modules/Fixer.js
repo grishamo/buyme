@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-const API_KEY  = "1e344e4a468f9e2c9b491568fb081fcf";
+const API_KEY  = "1dc5b0510d60c39a6f790dc46182f083";
 const BASE_URL = "http://data.fixer.io/api/";
 const REQUEST_URL = BASE_URL + "?access_key=" +  API_KEY;
 
