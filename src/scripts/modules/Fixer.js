@@ -9,6 +9,8 @@ const DEFAULT_OPTIONS = {
     symbols: "ILS, USD, GBP"
 };
 
+// TODO: Cache rates to reduce Api requests (cost saving)
+// TODO: Validate options parameter
 function GetWeeklyRates(options) {
     return new Promise((resolve, reject) => {
         const allUrls = [];
