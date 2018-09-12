@@ -1,6 +1,6 @@
-# Webpack Frontend Starterkit
+# BUYME Test
 
-A lightweight foundation for your next webpack based frontend project.
+by Grisha Mozias
 
 
 ### Installation
