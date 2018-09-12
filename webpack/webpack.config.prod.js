@@ -15,7 +15,8 @@ module.exports = merge(common, {
   },
   plugins: [
     new Webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.FIXER_API_KEY': JSON.stringify('1e344e4a468f9e2c9b491568fb081fcf')
     }),
     // compiling mode “scope hoisting”
     new Webpack.optimize.ModuleConcatenationPlugin(),
